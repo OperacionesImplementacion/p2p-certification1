@@ -1,9 +1,10 @@
 import { createApp } from 'vue'
-import { createRouter, createWebHashHistory } from 'vue-router';
-import "preline/preline";
+import { createPinia } from 'pinia'
+import { createRouter, createWebHashHistory } from 'vue-router'
+import "preline/preline"
 import './style.css'
-import App from './App.vue';
-import Welcome from './components/Welcome.vue';
+import App from './App.vue'
+import Welcome from './components/Welcome.vue'
 
 const routes = [
   {
@@ -45,6 +46,9 @@ router.afterEach(() => {
 });
 
 const app = createApp(App)
+const pinia = createPinia()
+
+app.use(pinia)
 app.use(router)
 
 app.mount('#app');
