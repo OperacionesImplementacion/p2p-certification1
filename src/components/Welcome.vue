@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import MerchantInfoSection from './MerchantInfoSection.vue'
 import EvidenceSection from './EvidenceSection.vue'
-import Header from './header.vue'
+import Header from './Header.vue'
 
 const merchantData = ref({
   merchantName: '',
