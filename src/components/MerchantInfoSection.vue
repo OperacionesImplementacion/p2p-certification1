@@ -70,32 +70,15 @@ const localData = computed({
                 </select>
             </div>
             <div>
-                <div class="flex items-center gap-2 mb-3">
-                    <label class="text-sm font-medium text-gray-700"> 
+                <div class="flex flex-col gap-2 mb-3">
+                    <label class="text-sm font-medium text-gray-700">
                         Versión Lenguaje
                     </label>
-                    <input v-model="localData.merchantName" type="text"
-                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-evertec-orange focus:border-transparent transition-all outline-none"
-                    placeholder="Ingrese versión del lenguaje" />
-                </div>
-            
-            </div>
 
-            <div>
-                <div class="flex items-center gap-2 mb-2">
-                    <CreditCard class="w-5 h-5 text-gray-600" />
-                    <label class="text-sm font-medium text-gray-700">
-                        Tipo de Servicio *
-                    </label>
+                    <input v-model="localData.merchantName" type="text"
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-evertec-orange focus:border-transparent transition-all outline-none"
+                        placeholder="Ingrese versión del lenguaje" />
                 </div>
-                <select v-model="localData.serviceType"
-                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-evertec-orange focus:border-transparent transition-all outline-none bg-white">
-                    <option value="">Seleccione un tipo de servicio</option>
-                    <option value="webcheckout-basic">Webcheckout pago básico</option>
-                    <option value="webcheckout-subscription">Webcheckout tokenización</option>
-                    <option value="api-basic">API pago básico</option>
-                    <option value="api-subscription">API tokenización</option>
-                </select>
             </div>
 
             <div>
@@ -112,6 +95,22 @@ const localData = computed({
                     <option value="getnet">GetNet</option>
                     <option value="bcr">BCR</option>
                     <option value="davivienda">Davivienda</option>
+                </select>
+            </div>
+                 <div>
+                <div class="flex items-center gap-2 mb-2">
+                    <CreditCard class="w-5 h-5 text-gray-600" />
+                    <label class="text-sm font-medium text-gray-700">
+                        Tipo de Servicio *
+                    </label>
+                </div>
+                <select v-model="localData.serviceType"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-evertec-orange focus:border-transparent transition-all outline-none bg-white">
+                    <option value="">Seleccione un tipo de servicio</option>
+                    <option value="webcheckout-basic">Webcheckout pago básico</option>
+                    <option value="webcheckout-subscription">Webcheckout tokenización</option>
+                    <option value="api-basic">API pago básico</option>
+                    <option value="api-subscription">API tokenización</option>
                 </select>
             </div>
         </div>
