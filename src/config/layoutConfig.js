@@ -326,63 +326,63 @@ export const fieldDefinitions = {
         description: 'Estructura ley de descuento',
         required: true,
         validation: 'file',
-        icon: 'Percent'
-    },
+        icon: 'scale'
+    },  
     terms_and_conditions: {
         label: 'Terminos y condiciones comercio',
         description: 'Apartado donde se identifique terminos y condiciones aplicados en el sitio web',
         required: false,
         validation: 'file',
-        icon: 'Percent'
+        icon: 'receipt-text'
     },
     expiration: {
         label: 'Tiempo de expiración',
         description: 'Sesión de Pago no debe exceder los 30 minutos',
         required: true,
         validation: 'file',
-        icon: 'Percent'
+        icon: 'clock-fading'
     },
     payment_summary: {
         label: 'Resumen de pago transacción',
         description: 'En la interfaz del comercio se debe mostrar como minimo estado, referencia, fecha, valor de la transacción',
         required: true,
         validation: 'file',
-        icon: 'Percent'
+        icon: 'hand-coins'
     },
     Request: {
         label: 'Request de petición generada',
         description: 'Se espera estructura request enviada en la petición de creación de sesión',
         required: true,
         validation: 'file',
-        icon: 'Percent'
+        icon: 'file-braces'
     },
     cronjob: {
         label: 'CronJob',
         description: 'Tarea programada con ejecuación cada 24 horas',
         required: true,
         validation: 'file',
-        icon: 'Percent'
+        icon: 'refresh-cw'
     },
     webhook: {
         label: 'Webhook',
         description: 'URL de notificación',
         required: true,
         validation: 'file',
-        icon: 'Percent'
+        icon: 'bell'
     },
     data_validation: {
         label: 'Nombres - Apellidos - Documento - Email',
         description: 'Se requiere que comercio realice validación de campos de la información previamente ingresada por el usuario',
         required: true,
         validation: 'file',
-        icon: 'Percent'
+        icon: 'mail-plus'
     },
     payment_button_control:{
         label: 'Botón de redirección',
         description: 'Se requiere que se controle el evento de redirección hacia el Webcheckout',
         required: true,
         validation: 'file',
-        icon: 'Percent'
+        icon: 'circle-fading-arrow-up'
     }
 
 
