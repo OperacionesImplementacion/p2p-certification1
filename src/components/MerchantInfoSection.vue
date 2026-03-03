@@ -69,6 +69,17 @@ const localData = computed({
                     <option value="other">Otro</option>
                 </select>
             </div>
+            <div>
+                <div class="flex items-center gap-2 mb-3">
+                    <label class="text-sm font-medium text-gray-700"> 
+                        Versión Lenguaje
+                    </label>
+                    <input v-model="localData.merchantName" type="text"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-evertec-orange focus:border-transparent transition-all outline-none"
+                    placeholder="Ingrese versión del lenguaje" />
+                </div>
+            
+            </div>
 
             <div>
                 <div class="flex items-center gap-2 mb-2">
