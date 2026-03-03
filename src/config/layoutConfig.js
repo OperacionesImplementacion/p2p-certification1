@@ -49,6 +49,12 @@ export const formConfig = {
                             description: 'Proceso de validación de datos de entrada y control de errores para garantizar la integridad del sistema.',
                             fields: ['data_validation', 'payment_button_control'],
                             icon: 'AlertTriangle'
+                        },
+                        {
+                            name: 'Invalidación proceso de tokenización',
+                            description: 'Inactivar el token generado, debido a problemas con el cobro del mismo proceder con la inactivación',
+                            fields: ['Invalid_token'],
+                            icon: 'AlertTriangle'
                         }
                     ],
                     icon: 'CreditCard'
@@ -105,6 +111,11 @@ export const formConfig = {
                             description: 'Proceso de validación de datos de entrada y control de errores para garantizar la integridad del sistema.',
                             fields: ['data_validation', 'payment_button_control'],
                             icon: 'AlertTriangle'
+                        }, {
+                            name: 'Invalidación proceso de tokenización',
+                            description: 'Inactivar el token generado, debido a problemas con el cobro del mismo proceder con la inactivación',
+                            fields: ['Invalid_token'],
+                            icon: 'AlertTriangle'
                         }
                     ],
                     icon: 'CreditCard'
@@ -160,6 +171,13 @@ export const formConfig = {
                             name: 'Validación de datos y control de errores',
                             description: 'Proceso de validación de datos de entrada y control de errores para garantizar la integridad del sistema.',
                             fields: ['data_validation', 'payment_button_control'],
+                            icon: 'AlertTriangle'
+                        },
+
+                        {
+                            name: 'Invalidación proceso de tokenización',
+                            description: 'Inactivar el token generado, debido a problemas con el cobro del mismo proceder con la inactivación',
+                            fields: ['Invalid_token'],
                             icon: 'AlertTriangle'
                         }
                     ],
